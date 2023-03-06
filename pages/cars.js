@@ -1,10 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import { Gallery } from "@/components/Gallery";
+import Head from "next/head";
 
 const cars = ({ carsDataList }) => {
   const cars = carsDataList.photos;
-  return <Gallery images={cars} obj="car" />;
+
+  return (
+    <>
+      <Head>
+        <title>Cars</title>
+      </Head>
+      <Gallery images={cars} obj="car" />
+    </>
+  );
 };
 
 export async function getStaticProps() {

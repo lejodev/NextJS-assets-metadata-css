@@ -1,12 +1,21 @@
 import { headers } from "@/next.config";
 import React from "react";
 import { Gallery } from "@/components/Gallery";
-import styles from "../styles/gallery.module.css";
+import styles from "../styles/gallery.module.scss";
+import Head from "next/head";
 
 const cats = ({ bikesList }) => {
   console.log(bikesList);
   const images = bikesList.photos;
-  return <Gallery images={images} obj="bikes" />;
+
+  return (
+    <>
+      <Head>
+        <title>Bikes</title>
+      </Head>
+      <Gallery images={images} obj="bikes" />
+    </>
+  );
 };
 
 export async function getStaticProps() {

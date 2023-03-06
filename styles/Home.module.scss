@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  background-color: #675;
+  align-items: center;
+  width: 90vw;
+  height: 100vh;
+  padding: 0 8% 0 8%;
+  .intro {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+    padding-left: 2%;
+    border-left: 1em solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    .title {
+      font-size: xx-large;
+    }
+  }
+  .paragraph {
+    font-size: xx-large;
+  }
+}
