@@ -13,11 +13,10 @@ export const Gallery = ({ images }) => {
               <Image
                 className={styles.image}
                 src={itemImageSource}
-                // width={200}
-                // height={200}
                 layout="fill"
                 alt="alt"
                 key={item.id}
+                quality="100"
               />
             </div>
           );
